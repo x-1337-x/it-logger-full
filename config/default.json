@@ -1,0 +1,3 @@
+{
+	"mongoURI": "mongodb+srv://ren123:asdfasdf@cluster0-usm94.azure.mongodb.net/<dbname>?retryWrites=true&w=majority"
+}
