@@ -7,7 +7,7 @@ import { deleteLog, setCurrent } from '../../actions/logActions';
 
 const LogItem = ({ log, deleteLog, setCurrent }) => {
 	const onDelete = () => {
-		deleteLog(log.id);
+		deleteLog(log._id);
 
 		M.toast({ html: 'Log Deleted' });
 	};

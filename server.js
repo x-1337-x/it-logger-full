@@ -9,6 +9,7 @@ const app = express();
 app.use(express.json({ extended: false }));
 
 app.use('/api/techs', require('./routes/techs'));
+app.use('/api/logs', require('./routes/logs'));
 
 const PORT = process.env.PORT || 5000;
 

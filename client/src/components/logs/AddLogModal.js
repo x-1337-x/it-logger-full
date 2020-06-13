@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { addLog } from '../../actions/logActions';
+import { addLog, getLogs } from '../../actions/logActions';
 
 import M from 'materialize-css/dist/js/materialize.min.js';
 
@@ -24,6 +24,7 @@ const AddLogModal = ({ addLog }) => {
 			};
 
 			addLog(newLog);
+			getLogs();
 
 			M.toast({ html: `Log added by ${tech}` });
 
